@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #number, #number2 {
+            width: 100%;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>conversione</h1>
+<form action="stampa.php" id="container" method="POST" style="display: flex;flex-direction: column;">
+    <label for="number">numero:</label>
+    <input type="text" id="number" name="number">
+
+    <label for="conversione">conversione:</label> 
+    <input type="radio" name="type" value="km" checked>
+
+    <label for="km">km</label>
+    <input type="radio" name="type" value="m">
+    <label for="m">m</label>
+    <input type="radio" name="type" value="cm">
+    <label for="cm">cm</label>
+    <input type="submit" value="converti" >
+</form>
+
+</body>
+</html>
