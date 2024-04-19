@@ -2,14 +2,12 @@
 <html>
 <body>
 <?php
-    echo $_POST;
+    
     if(isset($_POST["number"]) && isset($_POST["type"])) {
         $number = $_POST["number"];
         $type = $_POST["type"];
-
-       
+        
         $converted_value = 0;
-
         
         switch ($type) {
             case "km":
@@ -23,7 +21,7 @@
                 break;
         }
 
-        printf("Valore convertito: " . $converted_value);
+        printf("Valore convertito: " . $converted_value/1000*0.621371);
     } 
 ?>
 </body>
